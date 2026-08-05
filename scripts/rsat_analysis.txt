@@ -1,7 +1,0 @@
-###################################################################
-# Motif discovery
-###################################################################
-
-# Positionally restricted motif scanning and search against TFBS database 
-# As a background file, we used our Data_S1 dataset
-rsat peak-motifs -v 1 -i $f -disco local_words -top_peaks 0 -nmotifs 20 -minol 4 -maxol 7 -1str -origin center -motif_db footprintDB-plants transfac footprintDB.plants.motif.tf -motif_db TFDB_Hvu transfac Hvu_plantTFDB.tf -ctrl background.fa -scan_markov 1 -r_plot -img_format png -prefix peak-motifs -noov
